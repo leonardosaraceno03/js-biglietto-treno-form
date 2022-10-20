@@ -10,33 +10,77 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div class="row">
-        <div class="col-4">
-            <h3>Nome</h3>
-            <input type="text" class="form-control w-50 " id="InputUserName" value="">
+  
+    <div class="bg-danger py-5">
+      <h1 class="text-center text-white py-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+      <div class="container bg-white">
+       <div class="row w-100 m-auto  d-flex justify-content-evenly">
+        <div class="col-4 flex-column">
+            <div class="w-50 text-center m-auto">Nome Cognome</div>
+            <input type="text" class="form-control w-50 m-auto" id="InputUserName" value="">
        </div>
 
           <div class="col-4">
-              <h3>Quanti anni hai?</h3>
-              <input type="text" class="form-control w-50 " id="InputUserAge" value="">
+              <div class="w-50 text-center m-auto">Anni</div>
+              <input type="text" class="form-control w-50 m-auto" id="InputUserAge" value="">
           </div>
           
           <div class="col-4">
-            <h3>Quanti km devi percorrere?</h3>
-            <input type="text" class="form-control w-50 " id="InputUserKm" value="">
+            <div class="w-50 text-center m-auto">Km da percorrere</div>
+            <input type="text" class="form-control w-50 m-auto" id="InputUserKm" value="">
           </div>
-          <button  onclick="generaBiglietto()" class="w-25 m-auto btn btn-primary">Submit</button>
-    </div>
+          <div class="w-50 m-auto d-flex justify-content-evenly">
+            <button  onclick="generaBiglietto()" class="w-25 m-auto my-5 btn btn-danger
+          ">Genera</button>
+            <button  onclick="" class="w-25 m-auto my-5 btn btn-danger
+          ">Submit</button>
+        </div>
+          </div>
+        </div>
+        <h1 class="text-center text-white py-3">IL TUO BIGLIETTO</h1>
+        <div class="container bg-white my-5">
+          
+          <div class="row">
+            <div class="col-12"><h3>DETTAGLI PASSEGGERO</h3></div>
+          
+          <div class="col-3" >
+            <h3>NOME PASSEGGERO</h3>
+            <h5 id="PassengerName"></h5>
+          </div>
+          <div class="col-9">
+            <div class="container">
+              <div class="row">
+                <div class="col-3" >
+                  <h5>Offerta</h5>
+                  <div id="offer"></div>
+                </div>
+                <div class="col-3" >
+                  <h5>Carrozza</h5>
+                  <div id="NumeroCarrozza"></div>
+                </div>
+                <div class="col-3" >
+                  <h5>Codice CP</h5>
+                  <div id="inputCPCode"></div>
+                </div>
+                <div class="col-3" >
+                  <h5>Costo biglietto</h5>
+                  <div id="info"></div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+          </div>
+        </div>
+          
     
-    <div class="row">
-          <div class="w-50 m-auto" id="info"></div>
-          <div id="PassengerName"></div>
-          <div id="NumeroCarrozza"></div>
-          <div id="inputCPCode"></div>
-          <div id="offer"></div>
-    </div>
+   </div>
+    
+
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="./assets/script/main.js"></script>
+  
 </body>
 </html>
